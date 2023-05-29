@@ -10,18 +10,22 @@ const ContactItem = ({ name, number, id }) => {
   const filter = useSelector(state => state.filter);
 
   return name.toLowerCase().includes(filter.toLowerCase()) ? (
-    <li key={id} className={css.item}>
-      <p className={css.itemChild}>{name}</p>
-      <p className={css.itemChild}>{number}</p>
-      <button
-        className={css.itemButton}
-        id={id}
-        type="button"
-        onClick={() => dispatch(deleteContact(id))}
-      >
-        Delete
-      </button>
-    </li>
+    <ul className={css.list}>
+      <li key={id} className={css.item}>
+        <div className={css.thumb}>
+          <p className={css.itemChild}>{name}</p>
+          <p className={css.itemChild}>{number}</p>
+        </div>
+        <button
+          className={css.itemButton}
+          id={id}
+          type="button"
+          onClick={() => dispatch(deleteContact(id))}
+        >
+          Delete
+        </button>
+      </li>
+    </ul>
   ) : null;
 };
 

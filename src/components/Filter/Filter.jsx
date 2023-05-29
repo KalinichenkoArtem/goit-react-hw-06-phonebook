@@ -12,6 +12,7 @@ const Filter = () => {
     <label className={css.filter}>
       Filter
       <input
+        className={css.input}
         type="text"
         name="filter"
         onChange={e => dispatch(setFilter(e.target.value))}

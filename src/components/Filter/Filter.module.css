@@ -1,3 +1,22 @@
 .filter {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
   margin-top: 10px;
+  font-size: 16px;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-left: 12px;
 }
