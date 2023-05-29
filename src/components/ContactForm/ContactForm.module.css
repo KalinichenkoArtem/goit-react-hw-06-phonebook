@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+/* import styled from '@emotion/styled';
 
 export const Form = styled.form`
   display: flex;
@@ -33,4 +33,38 @@ export const Button = styled.button`
     background-color: #ffffff;
     box-shadow: 2px 2px 5px #000000;
   }
-`;
+`; */
+
+.form {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; */
+}
+
+.input {
+  /* background: rgb(207, 231, 253); */
+  /* border: none; */
+}
+
+input:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.label {
+  display: block;
+}
+
+.button {
+  margin: 10px 0;
+  cursor: pointer;
+  border: solid 1px black;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+}
